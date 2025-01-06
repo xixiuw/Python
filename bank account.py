@@ -1,4 +1,12 @@
 # IBAN Validator.
+"""
+https://edube.org/learn/pe-2/four-simple-programs-15
+An IBAN-compliant account number consists of:
+
+a two-letter country code taken from the ISO 3166-1 standard (e.g., FR for France, GB for Great Britain, DE for Germany, and so on)
+two check digits used to perform the validity checks – fast and simple, but not fully reliable, tests, showing whether a number is invalid (distorted by a typo) or seems to be good;
+the actual account number (up to 30 alphanumeric characters – the length of that part depends on the country)
+"""
 
 iban = input("Enter IBAN, please: ")
 iban = iban.replace(' ','')
